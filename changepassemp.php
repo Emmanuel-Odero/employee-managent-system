@@ -52,7 +52,7 @@ if(isset($_POST['update']))
 
 <html>
 <head>
-  <title>Change Password | XYZ Corporation</title>
+  <title>Change Password | BETA</title>
   <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">

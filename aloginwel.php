@@ -7,7 +7,7 @@ $result = mysqli_query($conn, $sql);
 
 <html>
 <head>
-	<title>Admin Panel | XYZ Corporation</title>
+	<title>Admin Panel |  BETA</title>
 	<link rel="stylesheet" type="text/css" href="styleemplogin.css">
 </head>
 <body>

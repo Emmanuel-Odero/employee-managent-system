@@ -10,7 +10,7 @@
 
 <html>
 <head>
-	<title>Apply Leave | Employee Panel | XYZ Corporation</title>
+	<title>Apply Leave | Employee Panel | BETA</title>
 	<link rel="stylesheet" type="text/css" href="styleapply.css">
 </head>
 <body bgcolor="#F0FFFF">
