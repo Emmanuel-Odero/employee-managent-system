@@ -10,7 +10,7 @@
 
 <html>
 <head>
-	<title>Employee Panel | XYZ Corporation</title>
+	<title>Employee Panel | BETA</title>
 	<link rel="stylesheet" type="text/css" href="styleview.css">
 </head>
 <body>

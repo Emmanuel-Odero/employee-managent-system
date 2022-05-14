@@ -14,7 +14,7 @@ $result = mysqli_query($conn, $sql);
 
 <html>
 <head>
-	<title>Employee Leave | Admin Panel | XYZ Corporation</title>
+	<title>Employee Leave | Admin Panel | BETA</title>
 	<link rel="stylesheet" type="text/css" href="styleview.css">
 </head>
 <body>

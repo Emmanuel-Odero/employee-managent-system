@@ -24,7 +24,7 @@ $result3 = mysqli_query($conn, $sql3);
 
 <html>
 <head>
-	<title>Employee Panel | XYZ Corporation</title>
+	<title>Employee Panel | BETA</title>
 	<link rel="stylesheet" type="text/css" href="styleemplogin.css">
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Montserrat" rel="stylesheet">
 </head>
