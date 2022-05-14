@@ -12,7 +12,7 @@ $result = mysqli_query($conn, $sql);
 
 <html>
 <head>
-	<title>Salary Table | XYZ Corporation</title>
+	<title>Salary Table | BETA</title>
 	<link rel="stylesheet" type="text/css" href="styleview.css">
 </head>
 <body>
