@@ -1,0 +1,62 @@
+version: '3.3'
+services:
+    #Database
+    db:
+        image: mysql:5.7
+        volumes:
+            - db_data:/var/lib/mysql
+        command: '--default-authentication-plugin=mysql_native_password'
+        restart: always
+        env_file: .env
+        environment:
+            MYSQL_DATABASE: hems
+        networks:
+            - hems
+    #phpMyadmin
+    # phpmyadmin:
+    #     depends_on:
+    #         - db
+    #     image: phpmyadmin/phpmyadmin
+    #     restart: always
+    #     env_file: .env
+    #     ports:
+    #         - '8081:80'
+    #     environment:
+    #         PMA_HOST: db
+    #         MYSQL_ROOT_PASSWORD: $MYSQL_PASSWORD
+    phpmyadmin:
+        depends_on:
+            - db
+        restart: always
+        image: phpmyadmin/phpmyadmin
+        #domainname: example.com
+        ports:
+            - 8081:80
+        environment:
+            PMA_HOSTS: db
+            #- PMA_VERBOSES=production-db1,production-db2,dev-db1,dev-db2
+            PMA_USER: hems
+            PMA_PASSWORD: password
+            #- PMA_ABSOLUTE_URI=http://example.com/phpmyadmin/
+        networks:
+            - hems
+
+
+    web:
+        depends_on:
+             - db
+        #image: php:7.3-apache #I decided not to use this image directly but to grab it from Dockerfile
+        build:
+            context: ./app
+            dockerfile: Dockerfile
+        container_name: hems
+        volumes:
+            - ./app/:/var/www/html/
+        ports:
+            - 8000:80
+        networks:
+        - hems
+networks:
+  hems:
+volumes:
+  db_data:
