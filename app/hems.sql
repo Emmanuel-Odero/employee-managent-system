@@ -39,7 +39,7 @@ CREATE TABLE `alogin` (
 --
 
 INSERT INTO `alogin` (`id`, `email`, `password`) VALUES
-(1, 'admin', 'admin');
+(1, 'admin@gmail.com', 'admin');
 
 -- --------------------------------------------------------
 
