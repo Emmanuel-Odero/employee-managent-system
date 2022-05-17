@@ -4,4 +4,4 @@
 
 tasks:
   - init: docker-compose up -d
-#    command:
+    command:  docker-compose up -d
