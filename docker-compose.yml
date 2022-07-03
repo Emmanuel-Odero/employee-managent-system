@@ -47,7 +47,7 @@ services:
              - db
         #image: php:7.3-apache #I decided not to use this image directly but to grab it from Dockerfile
         build:
-            context: ./app
+            context: .
             dockerfile: Dockerfile
         container_name: hems
         volumes:
@@ -55,7 +55,7 @@ services:
         ports:
             - 8000:80
         networks:
-        - hems
+            - hems
 networks:
   hems:
 volumes:
